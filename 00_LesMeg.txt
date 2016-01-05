@@ -1,0 +1,42 @@
+Nyese NEDERST
+______________________________
+08:38 17/09/2015
+
+Alarm is not properly reported.
+
+strongDebounce is OK
+
+For moustrap and pwr this output must be reported in SMS
+1) dummyflag must be replaced:
+	musTrpAlarmFlg
+	mainPwrAlarmFlg
+2) These flags must be set on return from strongDebounce
+
+3) New flags must be reported. New report:
+    xxAlm: new(NEW ALARM (as is)) cur: xxxAlarmFlg
+
+Remember to put ElAlm om separate line!
+output 
+_____________________________________
+08:35 16.10.2015
+PowerAlarmen vises bare en gang.
+Jeg trakk ut støpslet for å teste 29/9.
+Fikk en alarm, men glemte å sette støpslet.
+Den 9/9 var batteriet helt tomt - ingen flere meldinger!
+Omfattende jobb for å få igang igjen et fullstendig tømt batteri.
+ - men også kunnskap om at batteriet holder
+   Batterikapasitet nominelt 30Ahr holdt i 10 dager,
+   forbruket er altså ca:
+    30 Ahr*12V/(10dgr*24[hr/dgr])hr=1,5AV dvs 1,5W
+    eller ca 125mA strøm 
+_______________________________
+08:56 21/12/2015
+The alarm was moved to Hyttun and worked well.
+Than on the 17/12 it stopped sending SMS. (That is approx.
+100 days after I powered it up?)
+I went down to the Hyttun and the display showed repeted "running lights" which indicates that the nr. of SMS's has been exceeded.
+
+The unit was powered down and up again. Everything seems to work fine.
+
+>>>  The counter should be reset in setup() to make sure that it is
+sett correctly when the reset btn is pressed.
