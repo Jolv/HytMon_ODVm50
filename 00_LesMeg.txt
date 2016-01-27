@@ -40,3 +40,8 @@ The unit was powered down and up again. Everything seems to work fine.
 
 >>>  The counter should be reset in setup() to make sure that it is
 sett correctly when the reset btn is pressed.
+_______________________________
+19:37 27.01.2016  
+Systemet har vært i drift siden i fjor høst.
+Raportring av min og max fungerer fint, men alarm-flagget fungerer ikke
+Denne greina vil se litt på det
